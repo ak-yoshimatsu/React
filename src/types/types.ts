@@ -11,3 +11,9 @@ export type PhotoListSWR = {
   isLoading: boolean;
   isError: Error | undefined;
 };
+
+export type PhotoDetailSWR = {
+  photo: PhotoProps | undefined;
+  isLoading: boolean;
+  isError: Error | undefined;
+};

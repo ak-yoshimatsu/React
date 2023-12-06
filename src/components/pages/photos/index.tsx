@@ -1,6 +1,6 @@
 import React from 'react'; // 追加
 import { usePhotosList } from '../../../lib/api/photos/getter';
-import PhotoItem from './PhotoItem';
+import PhotoList from './photoList';
 
 export default function Photos() {
   const { photos, isLoading, isError } = usePhotosList();
@@ -12,7 +12,7 @@ export default function Photos() {
     <>
       <h1>Photo</h1>
       {photos?.map((photo) => (
-        <PhotoItem key={photo.id} photo={photo} />
+        <PhotoList key={photo.id} photo={photo} />
       ))}
     </>
   );
