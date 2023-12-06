@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 export default function Layout() {
   return (
     <>
-      <header style={{ backgroundColor: 'blue', color: 'white' }}>
+      <header style={{ backgroundColor: '#adf', color: '#444' }}>
         <h1 style={{ margin: '0 10px' }}>React Create App</h1>
         <NavBar />
       </header>
